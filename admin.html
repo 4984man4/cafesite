@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관리자 - 도네 카페</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <a href="./index.html" class="logo">☕ 도네 카페</a>
+      <ul>
+        <li><a href="./index.html">홈</a></li>
+        <li><a href="./menu.html">메뉴</a></li>
+        <li><span class="admin-badge">관리자</span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Admin Dashboard -->
+  <div id="login-page" class="admin-login-page">
+    <div class="login-container">
+      <h1>☕ 관리자 로그인</h1>
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <label for="password">비밀번호</label>
+          <input type="password" id="password" placeholder="관리자 비밀번호를 입력하세요" required>
+        </div>
+        <button type="submit" class="btn">로그인</button>
+        <p id="login-error" class="error-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard (로그인 후) -->
+  <div id="admin-page" class="admin-page" style="display: none;">
+    <div class="container">
+      <!-- Header -->
+      <div class="admin-header">
+        <h1>메뉴 관리</h1>
+        <button id="logout-btn" class="btn btn-secondary">로그아웃</button>
+      </div>
+
+      <!-- Add Menu Form -->
+      <section class="add-menu-section">
+        <h2>메뉴 추가</h2>
+        <form id="add-menu-form" class="menu-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="menu-name">메뉴명</label>
+              <input type="text" id="menu-name" placeholder="예: 아메리카노" required>
+            </div>
+            <div class="form-group">
+              <label for="menu-price">가격</label>
+              <input type="number" id="menu-price" placeholder="5000" required>
+            </div>
+            <div class="form-group">
+              <label for="menu-category">카테고리</label>
+              <select id="menu-category" required>
+                <option value="">선택하세요</option>
+                <option value="coffee">☕ 커피</option>
+                <option value="traditional-tea">🍵 전통차</option>
+                <option value="dessert">🍰 디저트</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="menu-description">설명</label>
+            <textarea id="menu-description" placeholder="메뉴 설명을 입력하세요" required></textarea>
+          </div>
+          <button type="submit" class="btn">메뉴 추가</button>
+          <p id="add-message" class="message"></p>
+        </form>
+      </section>
+
+      <!-- Menu List -->
+      <section class="menu-list-section">
+        <h2>메뉴 목록</h2>
+        <div id="admin-menu-container">
+          <p>로드 중...</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/auth.js"></script>
+  <script src="./js/admin.js"></script>
+</body>
+</html>

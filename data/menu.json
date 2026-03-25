@@ -1,0 +1,35 @@
+{
+  "coffee": [
+    { "name": "아메리카노", "price": 4500, "description": "진한 에스프레소" },
+    { "name": "카페라떼", "price": 5500, "description": "우유와 함께 부드러운 맛" },
+    { "name": "카푸치노", "price": 5500, "description": "풍부한 거품" },
+    { "name": "마키아또", "price": 5000, "description": "에스프레소와 거품의 조화" },
+    { "name": "카페모카", "price": 6000, "description": "초콜릿과 에스프레소" },
+    { "name": "플랫화이트", "price": 6000, "description": "실크 같은 우유 거품" },
+    { "name": "카라멜 마끼아또", "price": 6500, "description": "달콤한 카라멜 시럽" },
+    { "name": "헤이즐넛 라떼", "price": 6000, "description": "고소한 헤이즐넛 맛" }
+  ],
+  "traditional-tea": [
+    { "name": "수정과", "price": 6000, "description": "꼭지를 뺀 잣과 배, 계피, 생강" },
+    { "name": "유자차", "price": 6500, "description": "상큼한 유자의 맛과 향" },
+    { "name": "생강차", "price": 5500, "description": "따뜻한 생강의 매운맛" },
+    { "name": "대추차", "price": 6000, "description": "달콤한 대추의 풍미" },
+    { "name": "오미자차", "price": 6000, "description": "새콤하고 상큼한 다섯 가지 맛" },
+    { "name": "홍삼차", "price": 7500, "description": "고급 홍삼의 깊은 맛" },
+    { "name": "구기자차", "price": 6500, "description": "밝은 빨간 빛의 건강 차" },
+    { "name": "인삼차", "price": 7000, "description": "신선한 인삼의 독특한 향" },
+    { "name": "보이차", "price": 6500, "description": "중국의 숙성 차, 깊은 맛" },
+    { "name": "우롱차", "price": 6500, "description": "반발효 차의 은은한 맛" },
+    { "name": "영지버섯차", "price": 8000, "description": "고급 영지버섯의 건강 차" },
+    { "name": "모과차", "price": 6000, "description": "달콤하고 향긋한 모과" },
+    { "name": "매실차", "price": 6000, "description": "새콤한 매실의 기분 좋은 맛" },
+    { "name": "녹차", "price": 5000, "description": "상큼한 우리 차의 향기" },
+    { "name": "황기차", "price": 6500, "description": "노란 뿌리의 부드러운 맛" }
+  ],
+  "dessert": [
+    { "name": "크로플", "price": 7000, "description": "크로아상과 와플의 만남" },
+    { "name": "치즈케이크", "price": 6500, "description": "진한 치즈의 맛" },
+    { "name": "초콜릿 브라우니", "price": 5500, "description": "진하고 풍부한 초콜릿" },
+    { "name": "딸기 타르트", "price": 6500, "description": "신선한 딸기" }
+  ]
+}
